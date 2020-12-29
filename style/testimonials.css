@@ -43,3 +43,14 @@
 .testimonial__speech-bubble a {
   color: var(--color-pink);
 }
+
+@media screen and (max-width: 768px) {
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .testimonial {
+    align-items: center;
+  }
+}

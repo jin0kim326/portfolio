@@ -94,3 +94,9 @@
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
+
+@media screen and (max-width: 768px) {
+  .project {
+    flex-grow: 1;
+  }
+}

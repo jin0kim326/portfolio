@@ -62,3 +62,13 @@
 .job__period {
   font-size: var(--font-micro);
 }
+
+@media screen and (max-width: 768px) {
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+}

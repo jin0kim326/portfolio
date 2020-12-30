@@ -4,6 +4,7 @@
   padding: 40px;
   padding-top: 120px;
   text-align: center;
+  transition: all var(--animation-duration) ease-in-out;
 }
 
 .home__avatar {
@@ -26,4 +27,8 @@
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
+}
+
+#home.home-transparent {
+  opacity: 0;
 }

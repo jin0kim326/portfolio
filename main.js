@@ -38,6 +38,22 @@ document.addEventListener("scroll", () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+// arrow-up버튼 (스크롤을 내릴시 보이게하는 로직)
+const arrowUp = document.querySelector(".arrow-up");
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.classList.add("visible");
+  } else {
+    arrowUp.classList.remove("visible");
+  }
+});
+
+// arrow-up click event
+arrowUp.addEventListener("click", () => {
+  scrollIntoView("#home");
+});
+
 // 스크롤 이동 함수
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);

@@ -29,6 +29,22 @@
   border-radius: var(--size-border-radius);
 }
 
-#home.home-transparent {
+.arrow-up {
   opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--color-dark-grey);
+  font-size: var(--font-large);
+  color: var(--color-white);
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }

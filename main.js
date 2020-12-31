@@ -19,10 +19,14 @@ navbarMenu.addEventListener("click", (event) => {
   if (link == null) {
     return;
   }
-  //   const scrollTo = document.querySelector(link);
-  //   scrollTo.scrollIntoView({ behavior: "smooth" });
-
+  navbarMenu.classList.remove("open");
   scrollIntoView(link);
+});
+
+// navbar toggle-btn 클릭 시 메뉴아이템나오게하기
+const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
+navbarToggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
 });
 
 // home 'contact me' 버튼 클릭시 contact섹션으로 이동
@@ -65,9 +69,18 @@ workCategoryBtn.addEventListener("click", (event) => {
   if (filter == null) {
     return;
   }
+  // .active 처리
+  const active = document.querySelector(".category__btn.selected");
+  active.classList.remove("selected");
+  console.log(`nodaName: ${event.target.nodeName}`);
+  console.log(`event target: ${event.target}`);
+  const target =
+    event.target.nodeName === "BUTTON" ? event.target : event.target.parentNode;
+  console.log(`target : ${target}`);
+  target.classList.add("selected");
 
+  // 필터링 처리
   projectContainer.classList.add("anim-out");
-
   setTimeout(() => {
     projects.forEach((project) => {
       if (filter === "*" || filter === project.dataset.type) {

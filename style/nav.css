@@ -19,10 +19,7 @@
 
 .navbar__menu {
   display: flex;
-}
-
-.navbar__menu.open {
-  display: block;
+  justify-content: space-between;
 }
 
 .navbar__menu__item {
@@ -50,6 +47,9 @@
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
     display: block;
+    top: 16px;
+    right: 16px;
+    font-size: var(--font-medium);
   }
 
   #navbar {
@@ -64,10 +64,14 @@
     width: 100%;
     display: none;
   }
+
+  .navbar__menu.open {
+    display: inline-block;
+  }
 }
 
 /* javascript 로직 처리 */
 #navbar.navbar--dark {
-  padding: 8px;
+  padding: 16px;
   background-color: rgba(0, 0, 0, 0.7);
 }

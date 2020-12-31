@@ -109,3 +109,18 @@ button {
   max-width: 1200px;
   margin: auto;
 }
+
+@media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+  .section {
+    padding: 16px;
+    padding-top: 40px;
+  }
+}

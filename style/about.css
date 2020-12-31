@@ -66,9 +66,19 @@
 @media screen and (max-width: 768px) {
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0;
   }
 
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
+  }
+
+  .job {
+    margin: 0px 15px;
+  }
+  .job__description {
+    width: 100%;
+    text-align: center;
   }
 }

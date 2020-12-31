@@ -37,7 +37,7 @@ contactBtn.addEventListener("click", (event) => {
 
 // home 화면 스크롤시 투명하게 하기
 const home = document.querySelector(".home__container");
-const homeHeight = home.clientHeight;
+const homeHeight = home.offsetHeight;
 document.addEventListener("scroll", () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });

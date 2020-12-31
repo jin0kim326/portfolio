@@ -121,3 +121,8 @@
     margin: 4px;
   }
 }
+
+/* 개발업데이트노트 */
+.section__container h6 {
+  color: var(--color-dark-pink);
+}

@@ -160,10 +160,10 @@
             <div class="skill">
               <div class="skill__description">
                 <span>TYPESCRIPT</span>
-                <span>50%</span>
+                <span>5%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 50%"></div>
+                <div class="skill__value" style="width: 5%"></div>
               </div>
             </div>
             <div class="skill">
@@ -178,10 +178,10 @@
             <div class="skill">
               <div class="skill__description">
                 <span>NODEJS</span>
-                <span>10%</span>
+                <span>40%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 10%"></div>
+                <div class="skill__value" style="width: 40%"></div>
               </div>
             </div>
           </div>
@@ -209,19 +209,23 @@
     <section id="work" class="section">
       <div class="section__container">
         <h1>My work</h1>
-        <h3>진행한 프로젝트 : 클릭시 깃허브 페이지로 이동 <br /></h3>
+        <h3>
+          진행한 프로젝트 : 클릭시 깃허브 페이지로 이동 <br />
+          개발기간에 따른 분류 <br />
+          small:한달이내 middle:1~2개월 big:2개월이상
+        </h3>
         <div class="work__categories">
           <button class="category__btn selected" data-filter="*">
-            All<span class="category__count">4</span>
+            All<span class="category__count">5</span>
           </button>
-          <button class="category__btn" data-filter="front-end">
-            Front-end<span class="category__count">2</span>
+          <button class="category__btn" data-filter="small">
+            Small<span class="category__count">3</span>
           </button>
-          <button class="category__btn" data-filter="back-end">
-            Back-end<span class="category__count">1</span>
+          <button class="category__btn" data-filter="middle">
+            Middle<span class="category__count">1</span>
           </button>
-          <button class="category__btn" data-filter="mobile">
-            Mobile<span class="category__count">1</span>
+          <button class="category__btn" data-filter="big">
+            Big<span class="category__count">1</span>
           </button>
         </div>
 
@@ -230,7 +234,7 @@
             href="https://github.com/jin0kim326/mini-clothes-shop"
             class="project"
             target="blank"
-            data-type="front-end"
+            data-type="small"
             ><img
               class="project__img"
               src="imgs/projects/cloth-shop.png"
@@ -245,7 +249,7 @@
             href="https://github.com/jin0kim326/frontend-youtube-clone"
             class="project"
             target="blank"
-            data-type="front-end"
+            data-type="small"
             ><img
               class="project__img"
               src="imgs/projects/yt.png"
@@ -253,37 +257,52 @@
             />
             <div class="project__description">
               <h3>Youtube clone</h3>
-              <span>HTML,CSS를 이용한 유튜브 클론</span>
+              <span>HTML,CSS를 이용한 프론트엔드 클론</span>
             </div>
           </a>
           <a
-            href="https://github.com/jin0kim326/kokoa-clone-2021"
+            href="https://github.com/jin0kim326/js-momentum"
             class="project"
             target="blank"
-            data-type="back-end"
+            data-type="small"
             ><img
               class="project__img"
-              src="imgs/projects/yt.png"
-              alt="clone-kakaotalk"
+              src="imgs/projects/js-momentum.png"
+              alt="momentum"
             />
             <div class="project__description">
-              <h3>kakao-talk clone</h3>
-              <span>html,css를 이용한 카카오톡 클론</span>
+              <h3>chrome Momentum</h3>
+              <span>javascript로 크롬 모멘텀 만들기</span>
             </div>
           </a>
           <a
-            href="https://github.com/jin0kim326/Nomflix"
+            href="https://github.com/jin0kim326/bug-game"
             class="project"
             target="blank"
-            data-type="mobile"
+            data-type="middle"
             ><img
               class="project__img"
-              src="imgs/projects/yt.png"
+              src="imgs/projects/bugGame.png"
+              alt="bugGame"
+            />
+            <div class="project__description">
+              <h3>Bug-carrot Game</h3>
+              <span>vanila Javascript로 만든 미니게임</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/jin0kim326/YouTube"
+            class="project"
+            target="blank"
+            data-type="big"
+            ><img
+              class="project__img"
+              src="imgs/projects/jin-youtube.png"
               alt="clone-kakaotalk"
             />
             <div class="project__description">
-              <h3>netflix clone</h3>
-              <span>React를 이용한 넷플릭스 클론</span>
+              <h3>YouTube clone</h3>
+              <span>javascript,Node.js를 이용한 유튜브</span>
             </div>
           </a>
         </div>
@@ -298,21 +317,20 @@
         <div class="testimonials">
           <div class="testimonial">
             <img
-              src="imgs/testimonial/avatar.jpg"
+              src="imgs/avatar.png"
               alt="avatar"
               class="testimonial__avatar"
             />
             <div class="testimonial__speech-bubble">
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Doloribus suscipit libero mollitia amet tempora molestiae eum?
-                Quia voluptatibus minima iste iure ab illo perferendis maiores
-                labore beatae dolorum! Deserunt, reprehenderit.
+                저와 함께 일한 동료가 써준 추천사를 적는 곳입니다. 신입생이기에
+                아직 하나도 없지만, 저의 성장과 함께 채워질 공간입니다.
+                개발자로써 능력을 인정받아 떳떳하게 게시할 수 있도록 하겠습니다.
               </p>
-              <p class="name"><a href="">Nomad</a> / Samsung</p>
+              <p class="name"><a href="">anonymous</a> / company</p>
             </div>
           </div>
-          <div class="testimonial">
+          <!-- <div class="testimonial">
             <div class="testimonial__speech-bubble">
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -327,7 +345,7 @@
               alt="avatar"
               class="testimonial__avatar"
             />
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -341,7 +359,7 @@
           <i class="fab fa-github"></i>
         </a>
       </div>
-      <p class="contact__rights">2020 jinyoung-kim - All rights reserved</p>
+      <p class="contact__rights">2021 jinyoung-kim - All rights reserved</p>
     </section>
   </body>
 </html>

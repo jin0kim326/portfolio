@@ -69,6 +69,7 @@ workCategoryBtn.addEventListener("click", (event) => {
   if (filter == null) {
     return;
   }
+
   // .active 처리
   const active = document.querySelector(".category__btn.selected");
   active.classList.remove("selected");
@@ -124,7 +125,7 @@ function selectNavItem(selected) {
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: "smooth" });
-  selectNavItem(navItems[sectionIds.indexOf(selector)]);
+  classlist(navItems[sectionIds.indexOf(selector)]);
 }
 
 const observerOptions = {
